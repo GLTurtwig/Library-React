@@ -14,7 +14,7 @@ function Nav({cart}){
 
     const cartNumber = () => {
         let totalItems = 0;
-        cart.map(book => {
+        cart.forEach(book => {
             totalItems += book.quantity;
         })
         return totalItems;
